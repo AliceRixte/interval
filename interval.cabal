@@ -1,0 +1,41 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           interval
+version:        0.0.0
+synopsis:       Real interval with closed or open bounds.
+description:    Please see the README on GitHub at <https://github.com/AliceRixte/interval/blob/main/README.md>
+category:       numeric
+homepage:       https://github.com/AliceRixte/interval#readme
+bug-reports:    https://github.com/AliceRixte/interval/issues
+author:         Alice Rixte
+maintainer:     alice.rixte@u-bordeaux.fr
+copyright:      BSD3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+tested-with:
+    GHC == 9.8.4
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/AliceRixte/interval
+
+library
+  exposed-modules:
+      Numeric.Interval
+  other-modules:
+      Paths_interval
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -O2
+  build-depends:
+      base >=4.14 && <5
+    , ieee754
+  default-language: Haskell2010
