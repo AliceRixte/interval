@@ -4,6 +4,15 @@ This is a work in progress.
 
 Interval with open or closed bounds.
 
+```
+data IntervalBound a = OpenBound !a | ClosedBound !a
+
+data Interval a =
+    EmptyInterval
+  | Interval (IntervalBound a) (IntervalBound a)
+```
+
+
 I abandonned this to use Kmett's [intervals](https://hackage.haskell.org/package/intervals) package instead, which only deals with closed intervals.
 
 The package [data-interval](https://hackage.haskell.org/package/data-interval) already deals with open bounds and lower bounds with the following type  :
