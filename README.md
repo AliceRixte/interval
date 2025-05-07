@@ -17,7 +17,7 @@ Combined with the [Infinity](https://github.com/AliceRixte/infinity-class) class
 
 I abandonned this to use Kmett's [intervals](https://hackage.haskell.org/package/intervals) package instead, which only deals with closed intervals.
 
-The package [data-interval](https://hackage.haskell.org/package/data-interval) already deals with open bounds and lower bounds with the following type  :
+The package [data-interval](https://hackage.haskell.org/package/data-interval) already deals with open bounds and lower bounds with a more complicated type :
 
 ```haskell
 data Interval r
