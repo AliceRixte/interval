@@ -4,7 +4,7 @@ This is a work in progress.
 
 Interval with open or closed bounds.
 
-```
+```haskell
 data IntervalBound a = OpenBound !a | ClosedBound !a
 
 data Interval a =
