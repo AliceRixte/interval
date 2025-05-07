@@ -12,7 +12,7 @@ data Interval a =
   | Interval (IntervalBound a) (IntervalBound a)
 ```
 
-Combined with the [Infinity](https://github.com/AliceRixte/infinity-class), this allows to contain any kind of interval.
+Combined with the [Infinity](https://github.com/AliceRixte/infinity-class) class , this allows to contain any kind of interval.
 
 
 I abandonned this to use Kmett's [intervals](https://hackage.haskell.org/package/intervals) package instead, which only deals with closed intervals.
